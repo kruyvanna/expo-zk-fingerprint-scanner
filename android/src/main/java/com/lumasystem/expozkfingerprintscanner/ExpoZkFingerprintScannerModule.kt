@@ -100,6 +100,9 @@ class ExpoZkFingerprintScannerModule : Module() {
   }
 
   fun disconnectDevice() {
+    if(!connected) {
+      return
+    }
     closeDevice()
   }
 
