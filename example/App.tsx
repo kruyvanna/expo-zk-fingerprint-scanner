@@ -33,7 +33,6 @@ export default function App() {
         source={{ uri: `data:image/png;base64,${image}` }}
         style={{ width: 100, height: 100, backgroundColor: "blue" }}
       />
-      <Text>{ExpoZkFingerprintScanner.hello()}</Text>
       <Text>{connected ? "Connected" : "Disconnected"}</Text>
       <Button
         title="Connect"
