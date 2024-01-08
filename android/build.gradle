@@ -63,6 +63,14 @@ android {
   }
 
   namespace "com.lumasystem.expozkfingerprintscanner"
+
+  sourceSets {
+    main {
+      manifest.srcFile "src/main/AndroidManifestNew.xml"
+      jniLibs.srcDirs = ['libs']
+    }
+  }
+
   defaultConfig {
     minSdkVersion safeExtGet("minSdkVersion", 21)
     targetSdkVersion safeExtGet("targetSdkVersion", 33)
@@ -86,4 +94,5 @@ repositories {
 dependencies {
   implementation project(':expo-modules-core')
   implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${getKotlinVersion()}"
+  implementation fileTree(dir: "libs", include: ["*.jar"])
 }
