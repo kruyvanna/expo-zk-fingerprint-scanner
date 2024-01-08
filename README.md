@@ -6,7 +6,7 @@ This library is only for Android platform.
 ## Installation
 
 ```sh
-npm install expo-zk-fingerprint-scanner
+npx expo install expo-zk-fingerprint-scanner
 ```
 
 ## Target SDK version
