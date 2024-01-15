@@ -67,6 +67,7 @@ class ExpoZkFingerprintScannerModule : Module() {
   @RequiresApi(Build.VERSION_CODES.O)
   fun connectDevice() {
     if(connected) {
+      sendEvent("onDeviceConnected", mapOf())
       return
     }
 
@@ -81,6 +82,7 @@ class ExpoZkFingerprintScannerModule : Module() {
 
   fun disconnectDevice() {
     if(!connected) {
+      sendEvent("onDeviceDisconnected", mapOf())
       return
     }
     closeDevice()
