@@ -50,7 +50,7 @@ export default function App() {
     <View style={styles.container}>
       <Image
         source={{ uri: `data:image/png;base64,${image}` }}
-        style={{ width: 100, height: 100, backgroundColor: "blue" }}
+        style={{ width: 106, height: 160, backgroundColor: "blue" }}
       />
       <Text>{connected ? "Connected" : "Disconnected"}</Text>
       <Button
